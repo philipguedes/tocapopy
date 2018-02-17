@@ -1,5 +1,4 @@
-from flask import Flask, jsonify, Blueprint
-
+from flask import Flask, jsonify, Blueprint, make_response
 
 
 app = Flask(__name__)
@@ -12,3 +11,7 @@ app = Flask(__name__)
 # print("oi")
 
 # app.register_blueprint(champion_mastery)
+
+@app.route('/healthcheck', methods=['GET'])
+def healthcheck():
+    return make_response("OK", 200)
