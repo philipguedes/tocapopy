@@ -1,0 +1,14 @@
+img_orig
+txt_old
+preprocessed
+rotated
+img/*
+txt/*
+.idea
+*.pyc
+stats.csv
+
+# Test files
+!img/IMG000*.jpg
+!txt/IMG000*.txt
+__pycache__/
